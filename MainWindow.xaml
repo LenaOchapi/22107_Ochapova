@@ -1,0 +1,22 @@
+﻿<Window x:Class="_22107_Ochapova.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_22107_Ochapova"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="Введите размер массива (N):"/>
+            <TextBox x:Name="sizeTextBox"/>
+            <Label Content="Введите минимальное значение элементов:"/>
+            <TextBox x:Name="minValueTextBox"/>
+            <Label Content="Введите максимальное значение элементов:"/>
+            <TextBox x:Name="maxValueTextBox"/>
+            <Button Content="Сгенерировать и  отсортировать " Click="GenerateAndSortButton_Click"/>
+            <Label x:Name="resultLabel" Content=""/>
+
+        </StackPanel>
+    </Grid>
+</Window>
